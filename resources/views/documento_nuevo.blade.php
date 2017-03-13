@@ -77,7 +77,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label >Asunto</label>
-                                                    <textarea name="txtAsunto" id="txtAsunto" rows = 23 class="form-control"></textarea>
+                                                    <textarea name="txtAsunto" id="txtAsunto" rows = 23 class="form-control ckeditor"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,4 +94,5 @@
 
 @section('js')
     <script src="{{ url('public/js/documento.js') }}"></script>
+    <script src="{{ url('public/vendors/ckeditor/ckeditor.js') }}"></script>
 @stop

@@ -22,6 +22,12 @@
 					</a>
 				</li>
 
+				<li >
+					<a href="{{ url('informe_index') }}" class="glyphicons notes">
+						<i></i><span>Informe por Persona</span>
+					</a>
+				</li>
+
 				<li class="hasSubmenu">
 					<a href="#submenu1" class="glyphicons list" data-toggle="collapse"><i></i>
 						Catalogos

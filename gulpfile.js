@@ -25,6 +25,7 @@ elixir(function(mix) {
 				'components/plugins/ajaxify/jquery.lazyjaxdavis.min.js',
 				'components/plugins/preload/pace/pace.min.js',
 				'components/modules/admin/modals/assets/js/bootbox.min.js',
+				'components/common/forms/elements/fuelux-radio/fuelux-radio.js',
 				'components/plugins/less-js/less.min.js',
 				'components/core/js/preload.pace.init.js',
 				'components/core/js/sidebar.main.init.js',
@@ -38,7 +39,12 @@ elixir(function(mix) {
 				'components/common/forms/validator/assets/lib/jquery-validation/dist/validaciones.js',
 				'components/common/forms/elements/bootstrap-datepicker/assets/lib/js/bootstrap-datepicker.js',
 				'components/common/forms/elements/bootstrap-datepicker/assets/lib/js/locales/bootstrap-datepicker.es.js',
-				'components/common/forms/elements/bootstrap-select/assets/lib/js/bootstrap-select.js',
+				'components/common/forms/editors/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.all.js',
+				'components/common/forms/editors/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.js',
+				'components/common/forms/editors/bootstrap3-wysiwyg/dist/locales/bootstrap-wysihtml5.en-US.js',
+				'components/common/forms/editors/bootstrap3-wysiwyg/dist/locales/bootstrap-wysihtml5.es-ES.js',
+				'components/common/forms/wizards/assets/lib/jquery.bootstrap.wizard.js',
+				'components/common/forms/wizards/assets/custom/js/form-wizards.init.js',
 			],
 			'public/js/base-scripts.js',
 			'resources/assets'
@@ -57,14 +63,17 @@ elixir(function(mix) {
 				'components/plugins/prettyprint/assets/css/prettify.css',
 				'components/library/animate/animate.min.css',
 				'components/common/forms/elements/bootstrap-datepicker/assets/lib/css/bootstrap-datepicker.css',
-				'components/common/forms/elements/bootstrap-select/assets/lib/css/bootstrap-select.css',
+				'components/library/icons/pictoicons/css/picto.css',
+				'components/library/icons/pictoicons/css/picto-fundry-general.css',
+				'components/common/forms/editors/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.css'
 			],
 			'public/css/base-styles.css',
 			'resources/assets'
 		)
 		.copy([
 			'resources/assets/components/library/icons/fontawesome/assets/fonts',
-			'resources/assets/components/library/icons/glyphicons/assets/fonts'
+			'resources/assets/components/library/icons/glyphicons/assets/fonts',
+					'resources/assets/components/library/icons/pictoicons/fonts'
 			],
 			'public/fonts'
 		);

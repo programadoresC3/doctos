@@ -32,4 +32,9 @@ Route::group(['middleware' => ['UsuarioLogueado']], function() {
     Route::post('incidencias_grabar', 'IncidenciaController@insertaIncidencia');
     Route::get('incidencias_editar/{id}', 'IncidenciaController@editar');
     Route::post('incidencias_actualizar', 'IncidenciaController@actualizar');
+    Route::get('informe_index', 'InformeController@index');
+    Route::get('informeNuevo', 'InformeController@nuevo');
+    Route::post('informeInsertar', 'InformeController@insertar');
+    Route::get('informeEditar/{id}', 'InformeController@editar');
+    Route::post('informeActualizar', 'InformeController@actualizar');
 });
