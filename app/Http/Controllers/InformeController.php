@@ -64,10 +64,39 @@ class InformeController extends Controller
 
         $actulizacion = new InformeRepositorioSQLServer();
         $actua = $actulizacion->actualizaInforme($id, $perido, $sintesis);
-        
+
         if($actua == false)
             return response(0);
         else
             return response(1);
+    }
+
+    public function concentrado()
+    {
+        return view ('concentrado');
+    }
+
+    public function concentradoDetalle(Request $request)
+    {
+        $fechaPoa01 = $request->get('fechaDe');
+        $fechaPoa02 = $request->get('fechaA');
+
+        try{
+            $obtenerConcentrado = new InformeRepositorioSQLServer();
+            $elConc = $obtenerConcentrado->obtenerConcentrado($fechaPoa01, $fechaPoa02);
+
+//            if($request->get('origen') == "fecha") {
+//                return view('concentradoDetalle', compact('elConc'))->render();
+//            }
+
+//            if($request->get('origen') == "fecha") {
+//                return view('concentradoDetalle', compact('elConc'))->render();
+//            }
+            return view('concentradoDetalle', compact('elConc'))->render();
+        }
+        catch(\Exception $e){
+            echo $e->getMessage();
+            return null;
+        }
     }
 }

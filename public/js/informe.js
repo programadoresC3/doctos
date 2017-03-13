@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
     $("#btnEnviar").click(function(event) {
         var $informe = $("#txtInforme").val();
 
-        alert($informe);
+        //alert($informe);
 
         if(validar() === false) {
             bootbox.alert("No puede continuar");

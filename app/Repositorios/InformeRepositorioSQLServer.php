@@ -67,4 +67,22 @@ class InformeRepositorioSQLServer implements InformeRepositorioInterface
             return null;
         }
     }
+
+    public function obtenerConcentrado($f1, $f2)
+    {
+        try{
+            $listaConcentrado = array();
+            $elConcentrado = DB::select("Obtiene_Informe_Persona_Periodo ?, ?", array($f1, $f2));
+            $totalConcentrado = count($elConcentrado);
+            if($totalConcentrado >= 1){
+                foreach($elConcentrado as $elCon){
+                    $listaConcentrado[] = $elCon;
+                }
+                return $listaConcentrado;
+            }
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            return null;
+        }
+    }
 }

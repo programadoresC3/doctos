@@ -37,4 +37,6 @@ Route::group(['middleware' => ['UsuarioLogueado']], function() {
     Route::post('informeInsertar', 'InformeController@insertar');
     Route::get('informeEditar/{id}', 'InformeController@editar');
     Route::post('informeActualizar', 'InformeController@actualizar');
+    Route::get('concentrado', 'InformeController@concentrado');
+    Route::post('concentrdoDetalle', 'InformeController@concentradoDetalle');
 });

@@ -30,7 +30,7 @@
 
 				<li class="hasSubmenu">
 					<a href="#submenu1" class="glyphicons list" data-toggle="collapse"><i></i>
-						Catalogos
+						Catalogos / Informes
 					</a>
 					<ul id="submenu1" class="collapse">
 						<li>
@@ -39,6 +39,10 @@
 
 						<li>
 							<a href=""><i class="fa fa-male"></i> Para</a>
+						</li>
+
+						<li>
+							<a href="{{ url('concentrado') }}"><i class="fa fa-male"></i> Informe Personal</a>
 						</li>
 
 					</ul>
