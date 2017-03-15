@@ -39,7 +39,6 @@
                                                 <th> Fecha</th>
                                                 <th> Periodo</th>
                                                 <th> Editar</th>
-                                                <th> Imprimir</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -50,7 +49,6 @@
                                                     <td>{{ $lst->Fecha}}</td>
                                                     <td>{{ $lst->Periodo}}</td>
                                                     <td><a href="{{ url('informeEditar/'. $lst->Id) }}">Editar</a></td>
-                                                    <td><a href="{{ url('public/reportes/print.php/?idocumento='.$lst->Id.'&idreporte=1') }}">Print</a></td>
                                                 </tr>
                                             @endforeach
                                             </tbody>
